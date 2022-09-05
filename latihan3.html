@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Form</title>
+</head>
+
+<body>
+    <form name="formlatihan" method="GET" action="#" >
+        <table border="0" align="center" cellpadding="20" width="40%">
+            <thead>
+                <tr bgcolor="grey">
+                    <th colspan="2">latihan form</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr bgcolor="grey">
+                    <th colspan="2">
+                        <input type="submit" name="proses" value="kirim"/> &nbsp; &nbsp;
+                        <input type="reset" name="unproses" value="batal"/>
+
+                    </th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td width="25%"><label>Nama</label></td>
+                    <td>
+                        <input type="text" name="nama" value="" 
+                        placeholder="Nama lengkap" size="50" maxlength="100"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td>
+                        <input type="text" name="email" value="" 
+                        placeholder="Alamat email" size="50" maxlength="100"/> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="L" checked/>Laki-laki &nbsp;
+                        <input type="radio" name="gender" value="P"/>Perempuan
+
+                    </td>
+                </tr>
+                <tr>
+                    <td  valign="top"><label>Hobby</label></td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="Membaca"/>Membaca <br>
+                        <input type="checkbox" name="hobby" value="Game" checked/>Game <br>
+                        <input type="checkbox" name="hobby" value="Tidur"/>Tidur <br>
+                        <input type="checkbox" name="hobby" value="Makan"/>Makan <br>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Pendidikan</label></td>
+                    <td>
+                        <select name="pendidikan">
+                            <option value="">--Pilih pendidikan--</option>
+                            <option value="sma">SMA</option>
+                            <option value="D3">D3</option>
+                            <option value="S1" selected>S1</option>
+                            <option value="S2">S2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top"><label>Komentar</label></td>
+                    <td>
+                        <textarea name="komentar" cols="" rows="5">komentar anda</textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
